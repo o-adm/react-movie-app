@@ -1,0 +1,25 @@
+/***** COLORS *****/
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-glass: rgba(0, 0, 0, 0.2);
+  --background-main: #fff;
+  --background-box: rgba(219, 219, 219, 0.573);
+}
+// $color-black: #000;
+// $color-white: #fff;
+// $color-glass: rgba(0, 0, 0, 0.2);
+
+// $background-main: #fff;
+
+$default-font-size: 1.6rem;
+$btn-color: #00ba13;
+
+// Dark Mode Theme
+[data-themes="dark"] {
+  --background-main: #121212;
+  --color-text: #ffffff;
+  --color-dark: #000;
+  --color-glass: #f07272;
+  --background-box: rgba(132, 17, 17, 0.573);
+}

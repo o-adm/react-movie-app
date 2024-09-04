@@ -1,0 +1,27 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/utilities";
+@import "abstracts/variables";
+@import "abstracts/placeholders";
+
+@import "base/animations";
+@import "base/reset";
+@import "base/typography";
+@import "base/media-query";
+
+@import "layout/header.scss";
+@import "layout/footer";
+
+@import "components/searchbar.scss";
+@import "components/movie-box";
+@import "components/loader";
+@import "components/error";
+@import "components/modal";
+@import "components/movie-details";
+@import "components/movies-favorite";
+@import "components/dark-mode";
+@import "components/button";
+
+@import "themes/themes-switch";
+
+@import "pages/home";

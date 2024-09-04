@@ -1,0 +1,34 @@
+body {
+  background-color: var(--background-main);
+  color: var(--color-text);
+}
+
+.header {
+  background-color: var(--color-glass);
+  &__logo,
+  &__nav-link {
+    color: var(--color-text);
+  }
+}
+
+.movie-details {
+  &__title {
+    color: var(--color-text);
+  }
+}
+
+.movie-box {
+  background-color: var(--background-box);
+}
+
+.movie {
+  &__nbr-item-text {
+    color: var(--color-dark);
+  }
+}
+
+// .footer {
+//   &__text {
+//     color: var(--color-text);
+//   }
+// }

@@ -1,0 +1,59 @@
+.movie-box {
+  position: relative;
+  margin: 2rem;
+  border-radius: 3rem;
+  overflow: hidden;
+  background-color: rgba(219, 219, 219, 0.573);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  z-index: 1;
+  transition: all 0.3s;
+
+  &__image-box {
+    width: 15rem;
+    height: 20rem;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__info {
+    padding: 2rem 1rem;
+  }
+
+  &__title {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &__description {
+    font-size: $default-font-size;
+  }
+
+  &__release-date {
+    font-size: 1.8rem;
+    display: flex;
+    gap: 0.5em;
+  }
+
+  &:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+}
+
+@media only screen and (max-width: 968px) {
+  .movie-box {
+    &__title {
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+}

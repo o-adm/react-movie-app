@@ -1,0 +1,73 @@
+.movie-favorite {
+  &__count {
+    background-color: #facb3d;
+    padding: 1rem 0;
+    text-align: center;
+    border-radius: 0 0 2rem 2rem;
+    font-size: $default-font-size;
+    margin-bottom: 1rem;
+  }
+
+  &-details {
+    padding: 0 4rem;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+
+    &:not(:first-child) {
+      margin-top: 2rem;
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 2rem;
+      border-bottom: 0.2rem solid var(--color-white);
+    }
+  }
+
+  &__image-box {
+    width: 8rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-info {
+    font-size: $default-font-size;
+  }
+
+  &__state {
+    padding-top: 1rem;
+    display: flex;
+    gap: 2em;
+
+    p {
+      display: flex;
+      gap: 0.5rem;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+  }
+
+  &__avg {
+    background-color: var(--color-black);
+    border-radius: 5rem;
+    margin: 0 1rem;
+    color: var(--color-white);
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-around;
+
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  &-delete {
+    font-size: 2rem;
+    margin-left: auto;
+    border: none;
+    padding: 0.7rem;
+    clip-path: circle();
+  }
+}

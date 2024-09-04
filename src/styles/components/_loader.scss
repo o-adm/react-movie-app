@@ -1,0 +1,7 @@
+.loader {
+  position: absolute;
+  @extend %transform-center;
+  font-size: 3.5rem;
+  font-weight: 600;
+  z-index: 1;
+}

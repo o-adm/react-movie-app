@@ -1,0 +1,10 @@
+.error {
+  position: absolute;
+  @extend %transform-center;
+
+  &__text {
+    font-size: 2rem;
+    color: var(--color-white);
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,47 @@
+.header {
+  margin: 2rem 4rem;
+  padding: 1.5rem 1rem;
+  font-size: $default-font-size;
+  background-color: var(--color-glass);
+  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+  background: var(--color-glass);
+  border-radius: 1rem;
+  box-shadow: 0 4px 30px var(--color-glass);
+  gap: 2em;
+
+  @extend %flex-items;
+
+  & > * {
+    filter: none;
+    z-index: 1;
+  }
+
+  &__logo {
+    color: var(--color-white);
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1.7;
+    color: var(--color-black);
+    @extend %flex-items;
+  }
+
+  &__list {
+    @extend %flex-items;
+    gap: 2em;
+  }
+
+  &__nav-item {
+    &:last-child {
+      margin-right: 1rem;
+    }
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    font-size: inherit;
+    text-transform: uppercase;
+    color: var(--color-black);
+    font-weight: 600;
+  }
+}
